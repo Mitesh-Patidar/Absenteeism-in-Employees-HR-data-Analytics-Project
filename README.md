@@ -22,7 +22,7 @@ Where Social_drinker = 0 and Social_smoker = 0
 and Body_mass_index <25 and 
 Absenteeism_time_in_hours < (Select AVG(Absenteeism_time_in_hours) from Absenteeism_at_work )
 ```
----compensation rate increase for non-smokers/budget $983,221 so.68 increase per hour/$141.4 per year
+---compensation rate increase for non-smokers/budget $983,221 so .68 increase per hour/$1414.4 per year
 ```
 Select COUNT(*) as nonsmokers from Absenteeism_at_work
 Where Social_smoker = 0
