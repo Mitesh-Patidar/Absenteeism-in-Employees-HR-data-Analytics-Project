@@ -1,5 +1,9 @@
-## I have anlysed an HR dataset about absenteeism and health. I have develop a database, SQL queries to answer the requirments and built a dashboard. I have used Microsoft SQL Server Management Studio.
-## Requirment : Determine how to provide a bonus and incentive to healthy employees.
+### This project analyzes an HR dataset to explore the relationship between absenteeism and health. It includes:
+
+#### A data model: Developed in Microsoft SQL Server Management Studio (SSMS).
+#### SQL queries: Designed to answer specific questions about absenteeism and health trends.
+#### Interactive dashboard: Visualizes key findings for clear communication.
+### Requirment : Determine how to provide a bonus and incentive to healthy employees.
 
 # SQL Queries:
    --creating a join table
