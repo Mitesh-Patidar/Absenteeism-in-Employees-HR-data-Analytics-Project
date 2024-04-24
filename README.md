@@ -7,26 +7,29 @@
 
 # SQL Queries:
    --creating a join table
+```
 Select * from Absenteeism_at_work a
 left join compensation b
 On a.ID = b.ID
 left join Reasons r
 on a.Reason_for_absence = r.Number
+```
 
 ---find the healthiest
-
+```
 Select * from Absenteeism_at_work 
 Where Social_drinker = 0 and Social_smoker = 0 
 and Body_mass_index <25 and 
 Absenteeism_time_in_hours < (Select AVG(Absenteeism_time_in_hours) from Absenteeism_at_work )
-
+```
 ---compensation rate increase for non-smokers/budget $983,221 so.68 increase per hour/$141.4 per year
-
+```
 Select COUNT(*) as nonsmokers from Absenteeism_at_work
 Where Social_smoker = 0
+```
 
 --optimizing the query
-
+```
 Select
 a.ID,
 r.Reason,
@@ -59,3 +62,4 @@ left join compensation b
 On a.ID = b.ID
 left join Reasons r
 on a.Reason_for_absence = r.Number
+```
